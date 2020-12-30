@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Laravel Placeholder Images</title>
-	 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <h1>Laravel Placeholder Images</h1>
