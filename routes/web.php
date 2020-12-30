@@ -34,5 +34,5 @@ Route::middleware('cache.headers:public;etag')->group(function () {
         ]);
     })->where(['width' => '[0-9]+', 'height' => '[0-9]+'])
       ->name('placeholder')
-      ->middleware('cache.images');
+      ->middleware(['validate.images', 'cache.images']);
 });

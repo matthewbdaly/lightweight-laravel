@@ -49,5 +49,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'cache.images' => \App\Http\Middleware\CacheImages::class,
+        'validate.images' => \App\Http\Middleware\ValidateImageDimensions::class,
     ];
 }
