@@ -32,4 +32,5 @@ Route::get('/placeholder/{width}x{height}', function (int $width, int $height) {
         'Content-type' => 'image/png'
     ]);
 })->where(['width' => '[0-9]+', 'height' => '[0-9]+'])
-    ->name('placeholder');
+  ->name('placeholder')
+  ->middleware('cache.images');
